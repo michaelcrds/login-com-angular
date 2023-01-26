@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/services/auth/auth.service';
 
@@ -8,7 +8,7 @@ import { AuthService } from 'src/app/services/auth/auth.service';
   styleUrls: ['./login.component.scss']
 })
 
-export class LoginComponent implements OnInit{
+export class LoginComponent {
 
   public loginForm: FormGroup = this.fb.group({
     email:['',[Validators.required, Validators.email]],
@@ -21,10 +21,6 @@ export class LoginComponent implements OnInit{
     private fb: FormBuilder,
     private authService: AuthService
   ){}
-
-  ngOnInit(): void {
-    alert("email: teste@teste | senha: 123")
-  }
 
   public handleSubmit(){
     if(this.loginForm.valid){
