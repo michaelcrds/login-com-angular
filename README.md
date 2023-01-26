@@ -2,7 +2,7 @@
 
 Funcionalidade de login utilizando HTTP request, JWT e Guards.
 
-![FireShot Capture 038 - Frontend - localhost](https://user-images.githubusercontent.com/61437530/214970072-a7ec76f6-4c1a-44b9-a894-b5c155624ffb.png)
+![FireShot Capture 038 - Frontend - localhost](https://user-images.githubusercontent.com/61437530/214974472-0206f6fa-214f-4d05-a44e-0a22e6e96672.png)
 
 
 
