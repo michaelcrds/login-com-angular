@@ -1,0 +1,17 @@
+<div class="container">
+  <img src="assets/angular-logo.png" alt="">
+
+  <form [formGroup]="loginForm" (submit)="handleSubmit()">
+    <label>
+      <i class="fa-solid fa-circle-user"></i>
+      <input type="email" placeholder="E-mail" formControlName="email">
+    </label>
+    <label>
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" placeholder="Senha" formControlName="password">
+    </label>
+    <button class="red-btn" [disabled]="loginForm.invalid">Login</button>
+  </form>
+
+  <span class="error-msg" *ngIf="errorMsg">{{errorMsg}}</span>
+</div>

@@ -1,0 +1,31 @@
+@import "../../../../../scss/base/variables";
+
+:host{
+  form{
+    display: flex;
+    flex-direction: column;
+
+    &, label, input{
+      width: 100%;
+    }
+
+    label{
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $black;
+
+      i{
+        width: 30px;
+      }
+
+      input{
+        height: 50px;
+        border: none;
+
+        &::placeholder{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
